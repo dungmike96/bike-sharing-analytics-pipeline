@@ -29,7 +29,8 @@ Hệ thống pipeline được vận hành qua các công nghệ cốt lõi bao 
 4. **Biến đổi dữ liệu (Transformation - dbt Core):** Áp dụng mô hình thiết kế **Staging - Marts** để tách biệt khâu làm sạch/đổi tên cột và khâu tính toán chỉ số kinh doanh.
 5. **Trực quan hóa (BI Dashboard - Power BI):** Kết nối trực tiếp vào BigQuery tầng Marts để vẽ biểu đồ theo dõi các chỉ số sức khỏe vận hành theo thời gian thực.
 
-<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/204f3a56-2506-498e-aa0f-7e21e8edcada" />
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/91bd6e32-569c-4054-ab3f-2a91cd714313" />
+
 
 ## 3. Các Bài Toán Kỹ Thuật Đã Giải Quyết (Technical Challenges & Fixes)
 Trong quá trình xây dựng pipeline, dự án đã giải quyết thành công các bài toán tối ưu hạ tầng:
