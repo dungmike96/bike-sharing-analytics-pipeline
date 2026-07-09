@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: rawdata
+    database: bike-sharing-operation
+    schema: rawdata
+    tables:
+      - name: raw_orders_all
+      - name: raw_mapping_all
