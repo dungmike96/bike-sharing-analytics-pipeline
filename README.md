@@ -1,7 +1,25 @@
 # 🚲 Thống Kê & Tối Ưu Hóa Vận Hành Hệ Thống Xe Máy Điện (End-to-End Analytics Engineering Pipeline)
 
-##1. Tổng Overview Dự Án
+## 1. Tổng Overview Dự Án
 Dự án này xây dựng một hệ thống pipeline dữ liệu tự động hóa hoàn toàn từ khâu **Nạp dữ liệu thô (Data Ingestion)**, **Biến đổi dữ liệu (Data Transformation)** cho đến **Trực quan hóa (Data Visualization)** nhằm phân tích hiệu suất vận hành, dòng tiền (GMV, Doanh thu thuần) và lý do hủy chuyến của dịch vụ xe máy điện thông minh.
+## 📂 Cấu Trúc Thư Mục Dự Án (Project Structure)
+
+```text
+D:\Project\
+├── dags/                         # Thư mục chứa file code Python điều phối (Airflow DAGs)
+│   └── driver_supply_pipeline.py
+├── data/                         # Thư mục lưu trữ các tệp tin dữ liệu thô (.csv)
+│   ├── raw_orders/               # Bỏ các file order gốc vào đây
+│   ├── raw_mapping/              # Bỏ các file order cần mapping vào đây
+│   ├── driver_info/              # Bỏ file thông tin tài xế vào đây
+│   ├── shift_data/               # Bỏ file phân ca sáng trưa tối khuya vào đây
+│   ├── shift_registration/       # Bỏ file đăng ký ca của tài xế vào đây
+│   └── hex_code/                 # Bỏ file mã hex vào đây
+└── bike_sharing_dbt/             # Thư mục chứa toàn bộ dự án dbt Core (Transformation)
+    ├── models/
+    │   ├── staging/
+    │   └── marts/
+    └── dbt_project.yml
 
 ## 2. Kiến Trúc Hệ Thống (Data Architecture)
 Hệ thống pipeline được vận hành qua các công nghệ cốt lõi bao gồm:
@@ -10,6 +28,7 @@ Hệ thống pipeline được vận hành qua các công nghệ cốt lõi bao 
 3. **Kho dữ liệu (Data Warehouse - Google BigQuery):** Nơi lưu trữ tập trung dữ liệu tầng thô (Raw) và tầng sản xuất (Production).
 4. **Biến đổi dữ liệu (Transformation - dbt Core):** Áp dụng mô hình thiết kế **Staging - Marts** để tách biệt khâu làm sạch/đổi tên cột và khâu tính toán chỉ số kinh doanh.
 5. **Trực quan hóa (BI Dashboard - Power BI):** Kết nối trực tiếp vào BigQuery tầng Marts để vẽ biểu đồ theo dõi các chỉ số sức khỏe vận hành theo thời gian thực.
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/17f51ca3-b758-4501-88d1-b778c23a177e" />
 
 ## 3. Các Bài Toán Kỹ Thuật Đã Giải Quyết (Technical Challenges & Fixes)
 Trong quá trình xây dựng pipeline, dự án đã giải quyết thành công các bài toán tối ưu hạ tầng:
