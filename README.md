@@ -28,7 +28,8 @@ Hệ thống pipeline được vận hành qua các công nghệ cốt lõi bao 
 3. **Kho dữ liệu (Data Warehouse - Google BigQuery):** Nơi lưu trữ tập trung dữ liệu tầng thô (Raw) và tầng sản xuất (Production).
 4. **Biến đổi dữ liệu (Transformation - dbt Core):** Áp dụng mô hình thiết kế **Staging - Marts** để tách biệt khâu làm sạch/đổi tên cột và khâu tính toán chỉ số kinh doanh.
 5. **Trực quan hóa (BI Dashboard - Power BI):** Kết nối trực tiếp vào BigQuery tầng Marts để vẽ biểu đồ theo dõi các chỉ số sức khỏe vận hành theo thời gian thực.
-<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/17f51ca3-b758-4501-88d1-b778c23a177e" />
+
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/204f3a56-2506-498e-aa0f-7e21e8edcada" />
 
 ## 3. Các Bài Toán Kỹ Thuật Đã Giải Quyết (Technical Challenges & Fixes)
 Trong quá trình xây dựng pipeline, dự án đã giải quyết thành công các bài toán tối ưu hạ tầng:
@@ -45,10 +46,9 @@ Dữ liệu được tổ chức theo cấu trúc hình sao (Star Schema) tại 
 ## 5. Kết Quả & Dashboard
 
 ### Trực quan hóa tổng quan
-<img width="4150" height="2400" alt="GSM-images-0" src="https://github.com/user-attachments/assets/d4a52235-b94e-41eb-8344-927b0763f573" />
-<img width="4150" height="2400" alt="GSM-images-1" src="https://github.com/user-attachments/assets/4fc37232-7090-458c-9e2c-b24b0642ed14" />
-<img width="4150" height="2400" alt="GSM-images-2" src="https://github.com/user-attachments/assets/b104d728-4ec6-47e7-aaab-fea9a7db35ca" />
-
+<img width="4150" height="2400" alt="GSM-images-0" src="https://github.com/user-attachments/assets/0bbaf785-4fd8-4918-a07b-3bdd1a57e4e4" />
+<img width="4150" height="2400" alt="GSM-images-1" src="https://github.com/user-attachments/assets/e66e14af-499b-4833-8d11-36d26a26b95a" />
+<img width="4150" height="2400" alt="GSM-images-2" src="https://github.com/user-attachments/assets/74a1b209-6b0e-4d3f-8536-f9cd8b32bb7e" />
 
 ###  Trải nghiệm tương tác thực tế
 👉 Bạn có thể bấm vào [**Link Báo Cáo Tương Tác Của Power BI Tại Đây**]
