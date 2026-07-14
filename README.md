@@ -34,7 +34,7 @@ Dữ liệu được tổ chức theo cấu trúc hình sao (Star Schema) tại 
 
 
 ### 🚀 Trải nghiệm tương tác thực tế
-👉 Bạn có thể bấm vào [**Link Báo Cáo Tương Tác Của Power BI Tại Đây**](ĐIỀN_LINK_PUBLISH_TO_WEB_CỦA_BẠN_VÀO_ĐÂY) để trực tiếp sử dụng các bộ lọc (Filter) theo Khung giờ, Tỉnh thành và xem dữ liệu vận hành chi tiết.
+👉 Bạn có thể bấm vào [**Link Báo Cáo Tương Tác Của Power BI Tại Đây**](https://app.powerbi.com/view?r=eyJrIjoiZGM5MDlkMzEtZWRkMy00M2E0LTk1MDMtZDBkOGYyZWM0MjE3IiwidCI6ImNhYTU4MjFkLWFmMTctNDc2NC05MTM2LWE5NGRjZWVkNzM0ZiIsImMiOjEwfQ%3D%3D) để trực tiếp sử dụng các bộ lọc (Filter) theo Khung giờ, Tỉnh thành và xem dữ liệu vận hành chi tiết.
 
 ## 📂 Cấu Trúc Thư Mục Dự Án (Project Structure)
 
