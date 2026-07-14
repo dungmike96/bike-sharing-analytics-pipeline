@@ -1,7 +1,7 @@
 # Thống Kê & Tối Ưu Hóa Vận Hành Hệ Thống Xe Máy Điện (End-to-End Analytics Engineering Pipeline)
 
 ##  1. Tổng Overview Dự Án
-Dự án này xây dựng một hệ thống pipeline dữ liệu tự động hóa hoàn toàn từ khâu **Nạp dữ liệu thô (Data Ingestion)**, **Biến đổi dữ liệu (Data Transformation)** cho đến **Trực quan hóa (Data Visualization)** nhằm phân tích hiệu suất vận hành, dòng tiền (GMV, Doanh thu thuần) và lý do hủy chuyến của dịch vụ xe máy điện thông minh.
+Dự án này xây dựng một hệ thống pipeline dữ liệu tự động hóa hoàn toàn từ khâu **Nạp dữ liệu thô (Data Ingestion)**, **Biến đổi dữ liệu (Data Transformation)** cho đến **Trực quan hóa (Data Visualization)** nhằm phân tích hiệu suất vận hành, dòng tiền (GMV, Doanh thu thuần) và lý do hủy chuyến của dịch vụ xe máy điện thông minh dựa trên dữ liệu mô phỏng không phải là dữ liệu thực tế của doanh nghiệp.
 
 ##  2. Kiến Trúc Hệ Thống (Data Architecture)
 Hệ thống pipeline được vận hành qua các công nghệ cốt lõi bao gồm:
