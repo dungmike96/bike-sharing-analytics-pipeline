@@ -27,9 +27,10 @@ Dữ liệu được tổ chức theo cấu trúc hình sao (Star Schema) tại 
 ## 5. Kết Quả & Dashboard
 
 ### Trực quan hóa tổng quan
-<img width="4150" height="2400" alt="GSM-images-2" src="https://github.com/user-attachments/assets/39d55a4a-6f25-42a5-881c-8f80c297edb7" />
-<img width="4150" height="2400" alt="GSM-images-0" src="https://github.com/user-attachments/assets/f6064393-6c9e-4c55-905b-556385a537f6" />
-<img width="4150" height="2400" alt="GSM-images-1" src="https://github.com/user-attachments/assets/c21bbf35-c711-466c-9e55-fc3b68154c6e" />
+<img width="4150" height="2400" alt="GSM-images-0" src="https://github.com/user-attachments/assets/d1eda683-8002-45dd-bb78-861b1498b873" />
+<img width="4150" height="2400" alt="GSM-images-1" src="https://github.com/user-attachments/assets/3be4a8e7-b0a7-46bb-b140-a16e0e9a263c" />
+<img width="4150" height="2400" alt="GSM-images-2" src="https://github.com/user-attachments/assets/8e3b978a-f562-4be8-86d9-abfccd316467" />
+
 
 
 ### 🚀 Trải nghiệm tương tác thực tế
