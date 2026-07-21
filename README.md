@@ -35,7 +35,41 @@ Dữ liệu được tổ chức theo cấu trúc hình sao (Star Schema) tại 
 
 ### 🚀 Trải nghiệm tương tác thực tế
 👉 Bạn có thể bấm vào [**Link Báo Cáo Tương Tác Của Power BI Tại Đây**](https://app.powerbi.com/view?r=eyJrIjoiZGM5MDlkMzEtZWRkMy00M2E0LTk1MDMtZDBkOGYyZWM0MjE3IiwidCI6ImNhYTU4MjFkLWFmMTctNDc2NC05MTM2LWE5NGRjZWVkNzM0ZiIsImMiOjEwfQ%3D%3D) để trực tiếp sử dụng các bộ lọc (Filter) theo Khung giờ, Tỉnh thành và xem dữ liệu vận hành chi tiết.
+## 6. Insights & Actions
+1. Tối ưu hóa UCR và giảm tỷ lệ hủy chuyến (UCR & %Orders Cancel)
+Đây là vấn đề nổi cộm nhất trên dashboard thứ hai. Chỉ số UCR đang ở mức 81.0% 
 
+Đề xuất 1: Xử lý nhóm lý do hủy hàng đầu (Request by Cancel Reason)
+
+Quan sát: Biểu đồ cột cho thấy lý do hủy lớn nhất là khách hàng chủ động hủy do lí do cá nhân hoặc trước khi tìm thấy tài xế do điều phối kém
+
+Hành động: Cần rà soát lại thuật toán định tuyến (routing) và điều phối tài xế để giảm thời gian khách phải chờ đợi. Nếu khách hủy nhiều trước khi khớp xe, chứng tỏ thời gian phản hồi hệ thống hoặc khoảng cách tài xế đến quá xa.
+
+Đề xuất 2: Giảm thiểu tỷ lệ lỗi hệ thống/đối tác
+
+Quan sát: Ở dưới cùng có lý do system_partner Dù số lượng nhỏ hơn nhưng đây là lỗi kỹ thuật.
+
+Hành động: Làm việc với đội ngũ Tech để tối ưu hệ thống, giảm thiểu tối đa các ca hủy do lỗi hệ thống (system timeout hoặc crash) nhằm cải thiện trải nghiệm người dùng.
+
+2. Tối ưu hóa phân bổ ca làm việc và tài xế (Shift Allocation & GMV by hour)
+Đề xuất 3: Chính sách thưởng/Định giá linh hoạt (Dynamic Pricing & Incentives)
+
+Quan sát: GMV có sự chênh lệch quá lớn giữa các giờ trong ngày.
+
+Hành động: Đề xuất áp dụng cơ chế thưởng theo hiệu suất (Incentives) cho tài xế hoạt động vào các khung giờ vàng có GMV cao, hoặc áp dụng tăng giá giờ cao điểm (nếu chưa có) để cân bằng cung - cầu.
+
+3. Tối ưu hóa trải nghiệm khách hàng và phương thức thanh toán
+Đề xuất 4: Đẩy mạnh các phương thức thanh toán không tiền mặt
+
+Quan sát: Biểu đồ Customer Behavior & Payment cho thấy lượng giao dịch bằng Cash (Tiền mặt) chiếm tỷ trọng áp đảo tuyệt đối (2.67M), bỏ xa Momo, ZaloPay, thẻ quốc tế...
+
+Hành động: Vận hành bằng tiền mặt nhiều làm tăng thời gian giao dịch (chờ thối tiền), tăng rủi ro tài xế bị boom hàng hoặc không mang đủ tiền lẻ. Hãy đề xuất phối hợp với Marketing/Partnership để tung ra các chương trình khuyến mãi (Discount) khi liên kết ví điện tử hoặc thẻ để chuyển dịch hành vi khách hàng sang thanh toán trước. Điều này cũng góp phần làm giảm tỷ lệ hủy chuyến do khách đổi ý.
+
+Đề xuất 5: Tập trung tối ưu giao diện trên iOS
+
+Quan sát: Biểu đồ Customer Source cho thấy lượng request từ iOS chiếm tới 62.81% (2.27M), cao hơn hẳn Android và các nguồn khác.
+
+Hành động: Đảm bảo các tính năng mới, bản cập nhật app hoặc luồng đặt xe (booking flow) trên hệ điều hành iOS luôn được ưu tiên kiểm thử định kỳ (UX/UI testing) để không gặp lỗi, vì đây là tệp khách hàng mang lại sản lượng lớn nhất cho dịch vụ gọi xe.
 ## 📂 Cấu Trúc Thư Mục Dự Án (Project Structure)
 
 ```text
